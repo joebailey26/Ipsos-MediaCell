@@ -1,0 +1,16 @@
+{
+  "actions": [
+    { 
+      "codeword": 6001,
+      "id": "test_alert"
+    },
+    {
+      "codeword": 6002,
+      "id": "test_thanks"
+    },
+    {
+      "codeword": 6003,
+      "id": "test_thanks"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "1f2d6e09-7a72-49b6-9d63-e78a893ce607",
+		"name": "Ipsos MediaCell",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17504981"
+	},
+	"item": [
+		{
+			"name": "Get action by codeword",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/action/codeword/5002",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"action",
+						"codeword",
+						"5002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get codewords by action",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/action/id/alert",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"action",
+						"id",
+						"alert"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://127.0.0.1:3000"
+		}
+	]
+}
