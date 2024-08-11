@@ -11,8 +11,7 @@ REST API in Python.
 
 ## Getting started
 
-1. Clone the repo
-2. In the root directory, run `docker compose up backend`
+1. In the root directory, run `docker compose up backend`
 
 ## Testing
 

@@ -1,7 +1,17 @@
 services:
+  # ToDo
+  #  Implement auto-reloading for Flask
   backend:
     build: ./backend
     ports:
       - "3000:3000"
     volumes:
       - ./backend:/app
+  frontend:
+    build: ./frontend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./frontend:/app
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:3000

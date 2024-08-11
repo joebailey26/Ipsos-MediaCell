@@ -8,14 +8,18 @@ def get_codeword(codeword):
     # Iterate through the actions to find the one with the given codeword
     for action in data['actions']:
         if action['codeword'] == codeword:
-            return jsonify({"id": action['id']})
-    return jsonify({"error": "Codeword not found"}), 404
+            # Unified return structure to allow easier FE parsing
+            return jsonify({"results": [action['id']]})
+    return jsonify({"results": []})
 
 @action_bp.route('/api/action/id/<string:action_id>', methods=['GET'])
 def get_actions(action_id):
     data = current_app.config['DATA']
+    # ToDo
+    #  Should this search be case-insensitive?
     # Collect all codewords for the specified action_id
     codewords = [action['codeword'] for action in data['actions'] if action['id'] == action_id]
     if codewords:
-            return jsonify({"codewords": codewords})
-    return jsonify({"error": "Id not found"}), 404
+            # Unified return structure to allow easier FE parsing
+            return jsonify({"results": codewords})
+    return jsonify({"results": []})
