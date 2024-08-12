@@ -12,4 +12,4 @@ UI in Next.js.
 
 1. Clone the repo
 2. In the root directory, run `docker compose up frontend`
-3. Navigate to [https://localhost:8000](https://localhost:8000) and view the application
+3. Navigate to [http://localhost:8000](http://localhost:8000) and view the application
